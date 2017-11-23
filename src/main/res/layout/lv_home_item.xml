@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/shape_rectangle">
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/default_head"/>
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Tina"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv_head"
+        android:layout_toEndOf="@+id/iv_head" />
+    <TextView
+        android:id="@+id/tv_issue_time"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="bottom|right"
+        android:text="2016-04-20 19:30:25"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tv_account"
+        android:layout_toEndOf="@+id/tv_account" />
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_below="@id/iv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:text="家里有一台电视机，9成新，非诚勿扰，先到先得哦！家里有一台电视机，9成新，非诚勿扰，先到先得哦！
+            家里有一台电视机，9成新，非诚勿扰，先到先得哦！重要的事情说三遍！"/>
+    <ImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_description"
+        android:src="@drawable/default_head"/>
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/iv_picture"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:text="距离您235.6米"/>
+
+</RelativeLayout>

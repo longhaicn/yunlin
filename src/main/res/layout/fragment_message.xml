@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="消息中心"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/tb_munion_item_force"/>
+    <TextView
+        android:id="@+id/tv_receive"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        android:text="我收到的消息"
+        android:background="@drawable/shape_rectangle"
+        android:drawableRight="@drawable/detail_checked"/>
+    <TextView
+        android:id="@+id/tv_sent"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        android:text="我发出的消息"
+        android:background="@drawable/shape_rectangle"
+        android:drawableRight="@drawable/detail_checked"/>
+    <TextView
+        android:id="@+id/tv_collection"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        android:text="我的收藏"
+        android:background="@drawable/shape_rectangle"
+        android:drawableRight="@drawable/detail_checked"/>
+    <TextView
+        android:id="@+id/tv_record"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        android:text="我的发布记录"
+        android:background="@drawable/shape_rectangle"
+        android:drawableRight="@drawable/detail_normal"/>
+
+
+</LinearLayout>

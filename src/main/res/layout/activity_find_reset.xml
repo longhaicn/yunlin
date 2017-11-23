@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+    <include layout="@layout/activity_find_top"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle1">
+
+        <EditText
+            android:id="@+id/et_find_reset"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/password"
+            android:hint="新密码"
+            android:maxLength="20"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ.,/?!"
+            android:textColorHint="#BBBBBB"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cb_reset_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/inselect" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、为了您的账号安全，新旧密码必须不同"
+            android:textColor="#BBBBBB"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2、密码由6~20位英文、数字、或符号组成"
+            android:textColor="#BBBBBB"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_find_reset_next"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/circle2"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="#BBBBBB"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

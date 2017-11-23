@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/current_map">
+    <include
+        android:id="@+id/inc"
+        layout="@layout/activity_main_second_top"></include>
+    <EditText
+        android:id="@+id/et_description"
+        android:background="@drawable/shape_rectangle_corner"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:gravity="left"
+        android:layout_below="@+id/inc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="7"/>
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="50dp"
+        android:src="@drawable/location_doing"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/btn_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分类"
+        android:layout_alignBottom="@+id/iv_location"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

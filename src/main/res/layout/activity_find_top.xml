@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/shape_rectangle">
+    <ImageView
+        android:id="@+id/iv_top_return"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/return_image_pressed"/>
+    <TextView
+        android:id="@+id/tv_second_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="找回密码"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

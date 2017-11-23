@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/activity_main_login"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <EditText
+        android:id="@+id/et_account"
+        android:drawableLeft="@drawable/account"
+        android:hint="@string/account"
+        android:lines="1"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnm"
+        android:maxLength="11"
+        android:background="@drawable/circle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:background="@drawable/circle1"
+        android:drawableLeft="@drawable/password"
+        android:layout_width="match_parent"
+        android:hint="@string/password"
+        android:lines="1"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+         />
+    <CheckBox
+        android:id="@+id/cb_remember_password"
+        android:layout_width="wrap_content"
+        android:text="@string/rember_password"
+        android:layout_height="wrap_content"
+        android:checked="false" />
+    <Button
+        android:id="@+id/btn_login_submit"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/login"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/tv_register"
+            android:text="@string/register"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/tv_find_password"
+            android:layout_width="wrap_content"
+            android:text="@string/find_password"
+            android:layout_alignParentRight="true"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

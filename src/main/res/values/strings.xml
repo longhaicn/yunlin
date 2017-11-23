@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">云邻</string>
+    <string name="login">登录</string>
+    <string name="rember_password">记住密码</string>
+    <string name="register">免费注册</string>
+    <string name="find_password">忘记密码？</string>
+    <string name="account">云邻账号</string>
+    <string name="password">请输入密码</string>
+    <string name="login_fail">账号或密码错误</string>
+    <string name="login_success">登录成功</string>
+    <string name="menu_item1">发布</string>
+    <string name="log_out">注销登录</string>
+    <string name="keyword">输入查询关键字</string>
+    <string name="strPoint">小圆点</string>
+    <string name="locationfalse">位置获取失败</string>
+    <string name="accountfasle">账号已存在</string>
+    <string name="accountnull">填写不能为空</string>
+    <string name="registed">恭喜！注册成功！请登录！</string>
+</resources>

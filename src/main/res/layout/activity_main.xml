@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/activity_main_top"
+        android:id="@+id/main_top">
+    </include>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/act_main_view_pager"
+        android:layout_below="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <FrameLayout
+        android:id="@+id/act_main_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </FrameLayout>
+
+    <android.support.v4.app.FragmentTabHost
+        android:layout_alignParentBottom="true"
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0"/>
+
+
+    </android.support.v4.app.FragmentTabHost>
+</RelativeLayout>
